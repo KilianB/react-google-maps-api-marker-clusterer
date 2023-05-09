@@ -307,7 +307,7 @@ export class ClusterIcon {
         temp.innerHTML = this.svg;
 
         const svgElements = temp.getElementsByTagName('svg');
-        if(svgElements.length !== 0){
+        if(svgElements.length !== 1){
           throw new Error("SVG isn't valid. Please provide 1 root svg element" + this.svg);
         }
         clusterIcon = svgElements[0];
